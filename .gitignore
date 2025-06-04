@@ -216,3 +216,14 @@ flycheck_*.el
 
 # network security
 /network-security.data
+
+# Base de datos SQLite
+db.sqlite3
+
+# Entornos virtuales (por si no están dentro de `env/` o `venv/`)
+venv/
+env/
+
+# Archivos de migraciones (opcional)
+**/migrations/
+!**/migrations/__init__.py
