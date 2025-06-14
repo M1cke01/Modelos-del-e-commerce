@@ -24,4 +24,6 @@ class Cart(models.Model):
         new_qs = qs.filter(is_digital=False)
         if new_qs.exists():
             return False
-        return True
+        #return True
+        return not new_qs.exists()
+
