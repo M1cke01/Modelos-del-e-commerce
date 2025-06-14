@@ -1,6 +1,6 @@
 import math
 import datetime
-from django.conf import settings
+#from django.conf import settings
 from django.db import models
 #from django.db.models import Count, Sum, Avg
 #from django.db.models.query import QuerySet
