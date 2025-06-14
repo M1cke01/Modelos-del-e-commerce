@@ -1,8 +1,8 @@
 import os
-#from decimal import Decimal
-#from django.conf import settings
+from decimal import Decimal
+from django.conf import settings
 from django.db import models
-#from django.db.models.signals import pre_save, post_save
+from django.db.models.signals import pre_save, post_save
 
 def upload_image_path(filepath):
     base_name = os.path.basename(filepath)
@@ -19,3 +19,6 @@ class Product(models.Model):
     active = models.BooleanField(default=True)
     timestamp = models.DateTimeField(auto_now_add=True)
     is_digital = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.title
