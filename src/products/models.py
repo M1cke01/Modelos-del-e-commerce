@@ -2,7 +2,7 @@ import os
 from decimal import Decimal
 from django.conf import settings
 from django.db import models
-from django.db.models.signals import pre_save, post_save
+#from django.db.models.signals import pre_save, post_save
 
 def upload_image_path(filepath):
     base_name = os.path.basename(filepath)
